@@ -7,14 +7,19 @@ body{
     background-color: #444;
 }
 
-.input-container{
-    background-color: rgba(220,220,220,0.7);
+.input-container {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(220, 220, 220, 0.7);
     padding: 10px;
-    margin: auto;
     max-width: 40vw;
     align-self: center;
+    display: block;
 }
 
 input{
     margin: 3px;
 }
+
