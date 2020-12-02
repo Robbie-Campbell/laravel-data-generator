@@ -100,8 +100,7 @@ class StaffController extends Controller
     public function destroy(Request $request)
     {
         $id = $request->id;
-        $staff = staff::find($id);
-        $staff->delete();
+        staff::destroy($id);
         return redirect()->to('/')->with("message", "Successfully Deleted");
     }
 }

@@ -9,7 +9,7 @@
             @csrf
             <input type="text" name="id" placeholder="enter id for delete">
             <br>
-            <button type="delete_user">Delete</button>
+            <button class="btn btn-danger" type="submit">Delete</button>
         </form>
     </div>
 @endsection

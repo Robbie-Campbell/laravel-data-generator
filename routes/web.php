@@ -21,7 +21,7 @@ Route::get('update', "App\Http\Controllers\StaffController@edit");
 Route::post('commit_update', "App\Http\Controllers\StaffController@update");
 
 Route::get('delete', "App\Http\Controllers\StaffController@showdestroy");
-Route::delete('delete_user', "App\Http\Controllers\StaffController@destroy");
+Route::post('delete_user', "App\Http\Controllers\StaffController@destroy");
 
 Route::get("test", function (){
     return view("test");
